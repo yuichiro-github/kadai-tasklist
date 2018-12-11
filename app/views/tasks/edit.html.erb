@@ -4,8 +4,10 @@
 
 <%= form_for(@task) do |f| %>
 
-<%= f.label :content, 'メッセージ' %>
+<%= f.label :status, 'ステータス' %>
+<%= f.text_field :status %>
 
+<%= f.label :content, 'タスク内容' %>
 <%= f.text_field :content %>
 
 <%= f.submit '投稿' %>
